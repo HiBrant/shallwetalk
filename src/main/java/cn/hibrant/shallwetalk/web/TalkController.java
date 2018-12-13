@@ -5,16 +5,16 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.util.HtmlUtils;
 
-import cn.hibrant.shallwetalk.entity.ChatMsg;
-import cn.hibrant.shallwetalk.entity.ShowMsg;
+import cn.hibrant.shallwetalk.entity.InMsg;
+import cn.hibrant.shallwetalk.entity.OutMsg;
 
 @Controller
-public class GreetingController {
+public class TalkController {
 
 	@MessageMapping("/send")
 	@SendTo("/topic/show")
-	public ShowMsg chat(ChatMsg chatMsg) {
-		ShowMsg showMsg = new ShowMsg();
+	public OutMsg chat(InMsg chatMsg) {
+		OutMsg showMsg = new OutMsg();
 		showMsg.setName("TODO");
 		showMsg.setContent(HtmlUtils.htmlEscape(chatMsg.getContent()));
 		return showMsg;

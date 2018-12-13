@@ -1,6 +1,6 @@
 package cn.hibrant.shallwetalk.entity;
 
-public class ShowMsg {
+public class OutMsg {
 
 	private String name;
 	private String content;

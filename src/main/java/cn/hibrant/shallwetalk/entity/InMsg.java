@@ -1,6 +1,6 @@
 package cn.hibrant.shallwetalk.entity;
 
-public class ChatMsg {
+public class InMsg {
 
 	private String content;
 

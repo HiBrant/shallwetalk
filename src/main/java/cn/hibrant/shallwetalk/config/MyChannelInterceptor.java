@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 public class MyChannelInterceptor implements ChannelInterceptor, InitializingBean {
 	
 	private ConcurrentHashMap<String, Object> map;
-
+	
 	@Override
 	public Message<?> preSend(Message<?> message, MessageChannel channel) {
 		StompHeaderAccessor accessor = MessageHeaderAccessor.getAccessor(message, StompHeaderAccessor.class);

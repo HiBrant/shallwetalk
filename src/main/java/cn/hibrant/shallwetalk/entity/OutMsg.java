@@ -2,6 +2,7 @@ package cn.hibrant.shallwetalk.entity;
 
 public class OutMsg {
 
+	private String time;
 	private String name;
 	private String content;
 	
@@ -16,6 +17,12 @@ public class OutMsg {
 	}
 	public void setContent(String content) {
 		this.content = content;
+	}
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
 	}
 	
 }

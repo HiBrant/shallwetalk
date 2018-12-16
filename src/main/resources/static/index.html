@@ -21,15 +21,13 @@
 			</div>
 			<div class="row">
 		        <div class="col-md-12">
-		            <table id="conversation" class="table table-striped">
-		                <thead>
-		                <tr>
-		                    <th colspan="2">Conversation</th>
-		                </tr>
-		                </thead>
-		                <tbody id="msg">
-		                </tbody>
-		            </table>
+		        	<label>Conversation</label>
+		        	<div style="height: 600px; overflow-y: scroll;" id="scroll_div">
+		        		<table id="conversation" class="table table-striped">
+			                <tbody id="msg">
+			                </tbody>
+			            </table>
+		        	</div>
 		        </div>
 		    </div>
 		    <div class="row">
@@ -37,7 +35,7 @@
 		            <form class="form-inline">
 		                <div class="form-group">
 		                    <label for="name">Say something:</label>
-		                    <input type="text" id="input" class="form-control">
+		                    <textarea rows="3" style="width: 400px" id="input" class="form-control"></textarea>
 		                </div>
 		                <button id="send_btn" class="btn btn-default" type="submit">Send</button>
 		            </form>

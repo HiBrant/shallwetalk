@@ -39,6 +39,7 @@ function sendName() {
 
 function sendMsg() {
     stompClient.send("/app/send", {}, JSON.stringify({'content': $("#input").val()}));
+    $("#input").val("");
 }
 
 function showMsg(time, name, message) {
